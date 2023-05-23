@@ -35,7 +35,7 @@ const CreateTask = ({ tasks, setTasks }) => {
 
     const { name, status } = task;
     return (<form onSubmit={handleSubmit}>
-        <input type="text" className="border-2 border-slate-400 bg-slate-100 rounded-md mr-4 h-10 w-64 px-1" onChange={(e) => setTask({ ...task, id: uuidv4(), name: e.target.value })} value={name} />
+        <input placeholder="Enter Task" type="text" className="border-2 border-slate-400 bg-slate-100 rounded-md mr-4 h-10 w-64 px-1" onChange={(e) => setTask({ ...task, id: uuidv4(), name: e.target.value })} value={name} />
         <button className="bg-cyan-500 rounded-md px-4 h-12 text-white">Create</button>
     </form>);
 }
